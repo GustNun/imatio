@@ -1,26 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt">
-	<head>
-		<meta charset="utf-8">
-		<title>Imatio</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-        <script type="text/javascript" src="js/functions.js"></script>
-    </head>
-    <body>
-        <div id="geral">
-            <img src="./midia/logo.png" id="logo"/>
-            <div id="pecs">
-                <div id="categorias">
-                    <img src="./midia/catego/cozinha.jfif" class="categ" onclick="mudarCategoria(1);" />
-                    <img src="./midia/catego/sentimento.jfif" class="categ" onclick="mudarCategoria(3);" />
-                    <img src="./midia/catego/banheiro.jfif" class="categ" onclick="mudarCategoria(2);" />
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Imatio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <script type="text/javascript" src='js/functions.js'></script>
+</head>
+<body>
+    <div id="caixa">
+        <div id="pecs">
+            <div id="categs">
+                <div id="categ1" class="categoria" onclick="mudarCategoria(1);">
+                    <img src="./midia/catego/cozinha.jfif" class="imgcateg" />
                 </div>
-                <iframe src="./categorias/banheiro.html" style="height: 78%; width: 100%;" id="cat"></iframe>
+                <div id="categ2" class="categoria" onclick="mudarCategoria(2);">
+                    <img src="./midia/catego/banheiro.jfif" class="imgcateg" />
+                </div>
+                <div id="categ3" class="categoria" onclick="mudarCategoria(3);">
+                    <img src="./midia/catego/sentimento.jfif" class="imgcateg" />
+                </div>
+                <div id="categ4" class="categoria" onclick="mudarCategoria(4);">
+                    <img src="./midia/catego/corpo.png" class="imgcateg" />
+                </div>
+                <div id="categ5" class="categoria" onclick="mudarCategoria(5);">
+                    <img src="./midia/catego/pessoas.png" class="imgcateg" />
+                </div>
+                <div id="categ6" class="categoria" onclick="mudarCategoria(6);">
+                    <img src="./midia/catego/lugares.png" class="imgcateg" />
+                </div>
             </div>
-            <div id="escolhidos">
-                
+            <div id="imagens">
+                <div id="centralizar">
+                    <div id="centralizado">
+                        <!--Imagens alimento-->
+                        <img src="./midia/alimento/eu quero.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/não quero.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/gostei.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/não gostei.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/mais.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/menos.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/arroz.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/carne bovina.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/carne suina.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/chocolate.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/colher.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/faca.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/feijão.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/frango.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/frutas.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/garfo.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/legumes.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/leite.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/peixe.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/prato.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/refrigerante.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/suco.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <img src="./midia/alimento/água.png" class="imagsAli" onclick="selecionar(this.src);" />
+                        <!--Imagens sentimento-->
+                        <img src="./midia/sentimento/calor.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/enjoado.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/feliz.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/frio.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/machucado.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/medo.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/raiva.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <img src="./midia/sentimento/triste.png" class="imagsSen" onclick="selecionar(this.src);" />
+                        <!--Imagens banheiro-->
+                        <img src="./midia/banheiro/abrir torneira.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/abrir.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/assoar.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/cortar cabelo.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/escovar dentes.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/fechar torneira.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/fechar.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/lavar cabelo.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/lavar mãos.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/limpar cara.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <img src="./midia/banheiro/vestir.png" class="imagsBan" onclick="selecionar(this.src);"  />
+                        <!--Imagens corpo-->
+                        <img src="./midia/corpo/boca.png" class="imagsCorp" onclick="selecionar(this.src);" />
+                        <img src="./midia/corpo/braço.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/bunda.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/cabeça.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/costas.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/dente.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/GENITAIS.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/mão.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/nariz.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/olho.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/orelha.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/perna.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/pé.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <img src="./midia/corpo/tronco.png" class="imagsCorp" onclick="selecionar(this.src);"  />
+                        <!--Imagens pessoas-->
+                        <img src="./midia/pessoas/bebê.png" class="imagsPes" onclick="selecionar(this.src);" />
+                        <img src="./midia/pessoas/irmã.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/irmão.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/mamãe.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/médica.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/médico.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/papai.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/pet.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/professor.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/professora.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/vovó.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <img src="./midia/pessoas/vovô.png" class="imagsPes" onclick="selecionar(this.src);"  />
+                        <!--Imagens lugares-->
+                        <img src="./midia/lugares/apartamento.png" class="imagsLug" onclick="selecionar(this.src);" />
+                        <img src="./midia/lugares/banco.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/casa.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/escola.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/hospital.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/igreja.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/lanchonete.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                        <img src="./midia/lugares/loja.png" class="imagsLug" onclick="selecionar(this.src);"  />
+                    </div>
+                </div>
+            </div>
+            <div id="selecionadas">
+
             </div>
         </div>
-    </body>
+        <div id="lateral">
+            <img src="./midia/logo.png" class="imagesLat" id="logo" />
+            <img src="./midia/botoes/Botão 04.png" class="imagesLat" />
+            <img src="./midia/botoes/Botão 03.png" class="imagesLat" />
+            <img src="./midia/botoes/Botão 02.png" class="imagesLat" onclick="resetarSel()" />
+        </div>
+    </div>
+</body>
 </html>
