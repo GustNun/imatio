@@ -90,9 +90,19 @@
     border: 3px solid #942c2c;
     border-bottom: none;
 }
+#categ1:hover{
+    background-color: #942c2c;
+    border: #942c2c 3px solid;
+    border-bottom: none;
+}
 #categ2{
     background-color: #90EE90;
     border: #2e8b57 3px solid;
+    border-bottom: none;
+}
+#categ2:hover{
+    background-color: #2e8b57;
+    border: #90EE90 3px solid;
     border-bottom: none;
 }
 #categ3{
@@ -100,9 +110,19 @@
     border: #18428f 3px solid;
     border-bottom: none;
 }
+#categ3:hover{
+    background-color: #18428f;
+    border: #87CEFA 3px solid;
+    border-bottom: none;
+}
 #categ4{
     background-color: #d2b4de;
     border: #54076b 2px solid;
+    border-bottom: none;
+}
+#categ4:hover{
+    background-color: #54076b;
+    border: #d2b4de 3px solid;
     border-bottom: none;
 }
 #categ5{
@@ -110,9 +130,19 @@
     border: #6d7712 3px solid;
     border-bottom: none;
 }
+#categ5:hover{
+    background-color: #6d7712;
+    border: #f4d03f 3px solid;
+    border-bottom: none;
+}
 #categ6{
     background-color: #48c9b0;
     border: #0f5a44 3px solid;
+    border-bottom: none;
+}
+#categ6:hover{
+    background-color: #0f5a44;
+    border: #48c9b0 3px solid;
     border-bottom: none;
 }
 #pagina{
